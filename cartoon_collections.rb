@@ -9,17 +9,17 @@ end
 def summon_captain_planet(calls)
   # Your code here
   calls.collect do |call|
-   call.capitalize + "!"
- end
+    call.capitalize + "!"
+  end
 end
 
 def long_planeteer_calls(array)
   # Your code here
-  array.any?{|call| call.length > 4}
+  array.any?{|word| word.length > 4}
 end
 
 def find_the_cheese(strings)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  strings.find{|cheese| cheese_types.include?(cheese)}
+  strings.find{|cheese| cheese_types.include(cheese)}
 end
